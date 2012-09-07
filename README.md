@@ -31,3 +31,4 @@ http://whatshouldwecallme.tumblr.com/
 Things to add
 - way for people to add gifs directly from the site (front end)
 - check for duplicates, using the web address
+-have a way for people to mark off their favorites so when they search or just a list
