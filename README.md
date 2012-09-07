@@ -16,7 +16,8 @@ Will add final vision later.
 Good resources
 http://www.reddit.com/r/reactiongifs
 http://reactiongifsarchive.imgur.com/
-
+http://www.reactiongifs.com/
+http://whatshouldwecallme.tumblr.com/
 
 
 9/7
@@ -26,3 +27,7 @@ http://reactiongifsarchive.imgur.com/
     - emotions
     - situations
     - animal
+
+Things to add
+- way for people to add gifs directly from the site (front end)
+- check for duplicates, using the web address
