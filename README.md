@@ -16,3 +16,13 @@ Will add final vision later.
 Good resources
 http://www.reddit.com/r/reactiongifs
 http://reactiongifsarchive.imgur.com/
+
+
+
+9/7
+-working version is up
+- add tags to each gif
+- seperate gifs by:
+    - emotions
+    - situations
+    - animal
