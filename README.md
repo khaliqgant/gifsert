@@ -9,6 +9,10 @@ http://addressofthegif.com short_description
 
 Spending no more than 30 mins a day on this.
 
+In order to use:
+- need some front end to show the gifs. I used javscript to show the results.
+- need to grab the input by getting $q
+
 
 - 8/16
 
