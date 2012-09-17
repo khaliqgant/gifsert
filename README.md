@@ -9,7 +9,6 @@ http://addressofthegif.com short_description
 
 Spending no more than 30 mins a day on this.
 
-Will add final vision later.
 
 - 8/16
 
@@ -32,3 +31,6 @@ Things to add
 - way for people to add gifs directly from the site (front end)
 - check for duplicates, using the web address
 -have a way for people to mark off their favorites so when they search or just a list
+
+9/17
+-Adding actual Php code to find the correct gif. Adding both inserter and keyword search capabilities
