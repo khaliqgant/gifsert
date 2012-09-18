@@ -1,7 +1,7 @@
 <?php
 
     namespace gifsert;
-
+//I would make the namespace khaliqgant - Will
     /**
      * Gifsert caller
      * @author Khaliq
