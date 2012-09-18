@@ -1,6 +1,6 @@
 <?php
 
-    namespace KhaliqGant;
+    namespace gifsert;
 
     /**
      * Gifsert caller
@@ -9,7 +9,7 @@
      *
      */
 
-    class GifSert
+    class gifsert
     {
 
         public function search_bar($q)
