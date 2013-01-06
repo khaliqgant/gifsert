@@ -1,5 +1,6 @@
 <?php
 
+    //namespace should probably be khaliqgant
     namespace gifsert;
 
     /**
@@ -12,6 +13,13 @@
     class gifsert
     {
 
+        /**
+         * @author          Khaliq
+         * @description     ???
+         *
+         * @param $q
+         * @return array
+         */
         public function search_bar($q)
         {
             /**
@@ -44,6 +52,14 @@
 
         }
 
+        /**
+         * @author          Khaliq
+         * @description     ???
+         *
+         * @param $q
+         * @return array
+         */
+
         public function inserter($q)
         {
             /**
@@ -70,5 +86,49 @@
                 }
             }
         }
-    }
 
+
+        /**
+         * @author          Will
+         * @description     Find gifs by keyword on reddit to use in gifsert
+         *                  Eventually should be used to help add to the library
+         *                  Keyword is matched to title and wont always represent
+         *
+         * @todo            Create way to moderate these and add them to the "main gifs" file
+         * @todo            add check to make sure url exists and is an image
+         *
+         * @param           search_term
+         * @param string    $subreddit_to_search
+         *
+         * @return array    image url and description
+         */
+        public function reddit_search($search_term, $subreddit_to_search = 'gifs')
+        {
+            if (!in_array('curl', get_loaded_extensions())) {
+                throw new \Exception('cURL is required');
+            }
+
+            $reddit_json_url = "http://www.reddit.com/r/$subreddit_to_search/search.json?restrict_sr=on&q=";
+
+            $curlopt_url = $reddit_json_url . $search_term;
+
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $curlopt_url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            $output = json_decode(curl_exec($ch));
+
+            $gifs = array();
+
+            foreach ($output->data->children as $gif) {
+                $gifs[] = array(
+                    'image'       => $gif->data->url,
+                    'description' => $search_term
+                );
+            }
+
+            return $gifs;
+
+        }
+
+    }
